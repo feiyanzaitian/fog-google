@@ -61,6 +61,7 @@ module Fog
 
         ::Google::Apis::ClientOptions.default.application_name = application_name
         ::Google::Apis::ClientOptions.default.application_version = Fog::Google::VERSION
+        ::Google::Apis::ClientOptions.default.proxy_url = "http://httpproxy-tcop.vip.ebay.com:80"
 
         if ENV["DEBUG"]
           ::Google::Apis.logger = ::Logger.new(::STDERR)
